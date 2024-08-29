@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pongal Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header nav {
+            margin-top: 5px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ffccbc;
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h2 {
+            color: #ff5722;
+            border-bottom: 2px solid #ff5722;
+            display: inline-block;
+            margin: 40px 0 20px 0;
+            font-size: 28px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .ingredients, .steps {
+            margin-bottom: 30px;
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 20px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .back-links {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .back-links a {
+            text-decoration: none;
+            color: #ff5722;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .back-links a:hover {
+            color: #bf360c;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+            header nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .description, .ingredients li, .steps li {
+                font-size: 16px;
+            }
+            .image-container img {
+                width: 100%;
+                max-width: 250px;
+            }
+            .back-links a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pongal Recipe</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="breakfast.html">Back to Breakfast</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="image-container">
+        <img src="images/pongal.jpg" alt="Pongal">
+    </div>
+
+    <div class="description">
+        Pongal is a comforting South Indian rice porridge cooked with moong dal and flavored with spices. It's often enjoyed for breakfast or as a light meal, perfect with coconut chutney and sambar.
+    </div>
+
+    <h2>Ingredients</h2>
+    <div class="ingredients">
+        <ul>
+            <li>1 cup Rice</li>
+            <li>1/4 cup Moong Dal</li>
+            <li>1/2 tsp Black Pepper</li>
+            <li>1/2 tsp Cumin Seeds</li>
+            <li>1 tbsp Ghee</li>
+            <li>1/2 cup Chopped Cashews</li>
+            <li>1/4 cup Chopped Ginger</li>
+            <li>Salt to taste</li>
+            <li>Water (as needed)</li>
+        </ul>
+    </div>
+
+    <h2>Step-by-Step Instructions</h2>
+    <div class="steps">
+        <ol>
+            <li>Dry roast the moong dal in a pan until golden brown. Set aside.</li>
+            <li>In the same pan, heat ghee and add cumin seeds, black pepper, and chopped ginger. Sauté for a minute.</li>
+            <li>Add the rice, roasted moong dal, and water. Cook until the rice and dal are soft and the mixture is creamy.</li>
+            <li>Stir in the cashews and salt. Cook for another 5 minutes.</li>
+            <li>Serve hot with coconut chutney and sambar.</li>
+        </ol>
+    </div>
+
+    <div class="back-links">
+        <a href="index.html">Back to Home</a>
+        <a href="breakfast.html">Back to Breakfast</a>
+    </div>
+</div>
+
+</body>
+</html>

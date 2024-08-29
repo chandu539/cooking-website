@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirchi Bajji Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8e1;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f57f17;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header nav {
+            margin-top: 5px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ffeb3b;
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h2 {
+            color: #f57f17;
+            border-bottom: 2px solid #f57f17;
+            display: inline-block;
+            margin: 40px 0 20px 0;
+            font-size: 28px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .ingredients, .steps {
+            margin-bottom: 30px;
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 20px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .back-links {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .back-links a {
+            text-decoration: none;
+            color: #f57f17;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .back-links a:hover {
+            color: #d43f00;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+            header nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .description, .ingredients li, .steps li {
+                font-size: 16px;
+            }
+            .image-container img {
+                width: 100%;
+                max-width: 250px;
+            }
+            .back-links a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mirchi Bajji Recipe</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="side_dishes.html">Back to Snacks</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="image-container">
+        <img src="images/mirchi_bajji.jpg" alt="Mirchi Bajji">
+    </div>
+
+    <div class="description">
+        Mirchi Bajji is a popular Indian snack made by dipping green chilies in a spicy chickpea flour batter and deep-frying them until crispy. It's a delicious and spicy treat perfect for any occasion.
+    </div>
+
+    <h2>Ingredients</h2>
+    <div class="ingredients">
+        <ul>
+            <li>6-8 Green Chilies</li>
+            <li>1 cup Chickpea Flour</li>
+            <li>1 tsp Red Chili Powder</li>
+            <li>1/2 tsp Turmeric Powder</li>
+            <li>1/2 tsp Cumin Powder</li>
+            <li>1/2 tsp Ajwain (Carom Seeds)</li>
+            <li>Salt to taste</li>
+            <li>Water as needed</li>
+            <li>Oil for frying</li>
+        </ul>
+    </div>
+
+    <h2>Step-by-Step Instructions</h2>
+    <div class="steps">
+        <ol>
+            <li>Make a slit in each green chili and remove the seeds if you prefer less heat.</li>
+            <li>In a bowl, mix chickpea flour, red chili powder, turmeric powder, cumin powder, ajwain, and salt.</li>
+            <li>Add enough water to make a thick batter that coats the chilies well.</li>
+            <li>Heat oil in a pan for deep frying. Dip each chili into the batter and fry until golden and crispy.</li>
+            <li>Drain on paper towels and serve hot with chutney or ketchup.</li>
+        </ol>
+    </div>
+
+    <div class="back-links">
+        <a href="index.html">Back to Home</a>
+        <a href="side_dishes.html">Back to Snacks</a>
+    </div>
+</div>
+
+</body>
+</html>

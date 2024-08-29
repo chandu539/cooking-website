@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Manchurian Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            height: 240px;
+            width: 300px;
+            margin: 40px 50px;
+            box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            max-width: 300px;
+            text-align: center;
+        }
+        .caption {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        .recipe-details {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+            width: 100%;
+        }
+        .recipe-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .recipe-details .title {
+            font-weight: bold;
+            color: #333;
+        }
+        .recipe-details .description {
+            font-style: italic;
+            color: #555;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .search-box input[type="submit"] {
+            background-color: #ffffff;
+            color: #ff6347;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .search-box input[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+        .title-section {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin: 20px 0;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .title-section h1 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        .title-section p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search Recipes...">
+            <input type="submit" value="Search" onclick="searchRecipe()">
+        </div>
+    </header>
+
+    <div class="title-section">
+        <h1>Delicious Manchurian Starters</h1>
+        <p>Explore a variety of Manchurian recipes, each with a unique twist and packed with flavor. Perfect for any occasion!</p>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="chicken_manchurian.html">
+                <img src="images/chicken_manchurian.jpeg" alt="Chicken Manchurian">
+                <div class="caption">Chicken Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">Tender chicken pieces cooked in a tangy, spicy sauce with bell peppers and onions.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>30 minutes</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="babycorn_manchurian.html">
+                <img src="images/baby_corn_manchurian.jpeg" alt="Baby Corn Manchurian">
+                <div class="caption">Baby Corn Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">Crispy baby corn pieces in a spicy, tangy Manchurian sauce with vegetables.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>25 minutes</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="idly_manchurian.html">
+                <img src="images/idly_manchurian.jpeg" alt="Idly Manchurian">
+                <div class="caption">Idly Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">Soft idly pieces tossed in a spicy, tangy Manchurian sauce with fresh vegetables.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>20 minutes</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="lauki_manchurian.html">
+                <img src="images/lauki_manchurian.jpeg" alt="Lauki Manchurian">
+                <div class="caption">Lauki Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">Lauki (bottle gourd) cooked in a rich Manchurian sauce with a hint of spice.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>30 minutes</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="mushroom_manchurian.html">
+                <img src="images/mushroom_manchurian.jpg" alt="Mushroom Manchurian">
+                <div class="caption">Mushroom Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">Sautéed mushrooms in a spicy, savory sauce with vegetables.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>25 minutes</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="paneer_manchurian.html">
+                <img src="images/paneer_manchurian.jpg" alt="Paneer Manchurian">
+                <div class="caption">Paneer Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">Cubes of paneer in a rich, spicy sauce with a medley of vegetables.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>30 minutes</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="soya_manchurian.html">
+                <img src="images/soya_manchurian.jpeg" alt="Soya Manchurian">
+                <div class="caption">Soya Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">Textured soy protein pieces in a tangy, spicy Manchurian sauce.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>30 minutes</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="tofu_manchurian.html">
+                <img src="images/tofu_manchurian.jpeg" alt="Tofu Manchurian">
+                <div class="caption">Tofu Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">Fried tofu cubes in a savory, spicy sauce with bell peppers and onions.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>25 minutes</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="veg_manchurian.html">
+                <img src="images/veg_manchurian.jpg" alt="Veg Manchurian">
+                <div class="caption">Veg Manchurian</div>
+            </a>
+            <div class="recipe-details">
+                <p class="title">Description:</p>
+                <p class="description">A mix of vegetables in a tangy, spicy Manchurian sauce.</p>
+                <p class="title">Servings:</p>
+                <p>4</p>
+                <p class="title">Preparation Time:</p>
+                <p>20 minutes</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function searchRecipe() {
+            // Get the search input value
+            var searchKeyword = document.getElementById("searchInput").value.toLowerCase();
+
+            // Object mapping keywords to page URLs
+            var recipePages = {
+                "chicken manchurian": "chicken_manchurian.html",
+                "baby corn manchurian": "babycorn_manchurian.html",
+                "idly manchurian": "idly_manchurian.html",
+                "lauki manchurian": "lauki_manchurian.html",
+                "mushroom manchurian": "mushroom_manchurian.html",
+                "paneer manchurian": "paneer_manchurian.html",
+                "soya manchurian": "soya_manchurian.html",
+                "tofu manchurian": "tofu_manchurian.html",
+                "veg manchurian": "veg_manchurian.html"
+            };
+
+            // Check if the search keyword matches any recipe
+            if (recipePages[searchKeyword]) {
+                // Redirect to the corresponding page
+                window.location.href = recipePages[searchKeyword];
+            } else {
+                // If no match found, alert the user or handle accordingly
+                alert("Recipe not found! Please try another search term.");
+            }
+        }
+    </script>
+</body>
+</html>

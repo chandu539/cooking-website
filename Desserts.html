@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Desserts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .search-box input[type="submit"] {
+            background-color: #ffffff;
+            color: #ff6347;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .search-box input[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+        .title-section {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin: 20px 0;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .title-section h1 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        .title-section p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        img {
+            height: 240px;
+            width: 300px;
+            margin-top: 20px;
+            box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;
+        }
+        .caption {
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .image-details {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 10px;
+            width: 300px;
+        }
+        .image-details h3 {
+            font-size: 22px;
+            margin: 0;
+            color: #ff6347;
+        }
+        .image-details p {
+            font-size: 14px;
+            color: #666;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search Desserts..." id="search-input">
+            <input type="submit" value="Search" onclick="function_dessert()">
+        </div>
+    </header>
+
+    <div class="title-section">
+        <h1>Delicious Desserts</h1>
+        <p>Discover a delightful collection of traditional and exotic desserts that will satisfy your sweet tooth.</p>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="gulab_jamun.html">
+            <img src="images/gulab_jamun_ds.jpeg" alt="Gulab Jamun">
+            </a>
+           
+            <div class="image-details">
+                <h3>Gulab Jamun</h3>
+                <p>A classic Indian sweet made from milk solids, fried, and soaked in rose-flavored syrup.</p>
+                <p><strong>Ingredients:</strong> Milk solids, Sugar, Rose water</p>
+                <p><strong>Preparation Time:</strong> 45 minutes</p>
+               <!----- <p><strong>Preparation:</strong> Prepare dough, fry, and soak in warm syrup.</p>--->
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="rasamalai.html">
+            <img src="images/Rasmalai.jpeg" alt="Rasmalai">
+            
+            </a>
+            <div class="image-details">
+                <h3>Rasmalai</h3>
+                <p>Soft, spongy cheese balls soaked in sweet, cardamom-flavored milk.</p>
+                <p><strong>Ingredients:</strong> Paneer, Milk, Sugar, Cardamom</p>
+                <p><strong>Preparation Time:</strong> 1 hour</p>
+             <!-----   <p><strong>Preparation:</strong> Cook paneer balls, prepare milk, and combine.</p>--->
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="kheer.html">
+            <img src="images/kheer.jpeg" alt="Kheer">
+            
+            </a>
+            <div class="image-details">
+                <h3>Kheer</h3>
+                <p>A creamy rice pudding flavored with cardamom and garnished with nuts.</p>
+                <p><strong>Ingredients:</strong> Rice, Milk, Sugar, Cardamom</p>
+                <p><strong>Preparation Time:</strong> 30 minutes</p>
+               <!----- <p><strong>Preparation:</strong> Cook rice in milk, add sugar and cardamom.</p>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="chamcham.html">
+            <img src="images/ChamCham.jpeg" alt="ChamCham">
+           
+            </a>
+            <div class="image-details">
+                <h3>ChamCham</h3>
+                <p>Chewy, white, and sweet Bengali dessert soaked in syrup.</p>
+                <p><strong>Ingredients:</strong> Paneer, Sugar, Cardamom</p>
+                <p><strong>Preparation Time:</strong> 40 minutes</p>
+              <!----- <p><strong>Preparation:</strong> Prepare dough, shape, cook, and soak in syrup.</p>--->
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="rasagulla.html">
+            <img src="images/rasugulla.jpeg" alt="Rasugulla">
+           
+            </a>
+            <div class="image-details">
+                <h3>Rasugulla</h3>
+                <p>Soft and spongy balls made from cottage cheese soaked in a sweet syrup.</p>
+                <p><strong>Ingredients:</strong> Cottage cheese, Sugar, Water</p>
+                <p><strong>Preparation Time:</strong> 50 minutes</p>
+               <!--- <p><strong>Preparation:</strong> Cook cheese balls in sugar syrup.</p>-->
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="barfi.html">
+            <img src="images/barfi.jpg" alt="Barfi">
+           
+            </a>
+            <div class="image-details">
+                <h3>Barfi</h3>
+                <p>A sweet confectionery made from condensed milk and flavored with nuts.</p>
+                <p><strong>Ingredients:</strong> Condensed milk, Nuts, Sugar</p>
+                <p><strong>Preparation Time:</strong> 30 minutes</p>
+              <!------  <p><strong>Preparation:</strong> Cook ingredients, set in a tray, and cut into pieces.</p>--->
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="ghevar.html">
+            <img src="images/Ghevar.jpeg" alt="Ghevar">
+            
+            </a>
+            <div class="image-details">
+                <h3>Ghevar</h3>
+                <p>A traditional Rajasthani sweet made from refined flour and soaked in sugar syrup.</p>
+                <p><strong>Ingredients:</strong> Flour, Sugar, Ghee</p>
+                <p><strong>Preparation Time:</strong> 60 minutes</p>
+               <!----- <p><strong>Preparation:</strong> Prepare batter, fry, and soak in syrup.</p>-->
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="halwa.html">
+            <img src="images/halwa.jpeg" alt="Halwa">
+            
+            </a>
+            <div class="image-details">
+                <h3>Halwa</h3>
+                <p>A rich and decadent dessert made from semolina or various other ingredients.</p>
+                <p><strong>Ingredients:</strong> Semolina, Sugar, Ghee</p>
+                <p><strong>Preparation Time:</strong> 30 minutes</p>
+                <!--<p><strong>Preparation:</strong> Cook ingredients until it thickens.</p>-->
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="malai_kulfi.html">
+            <img src="images/MalaiKulfi.jpeg" alt="Malai Kulfi">
+            
+            </a>
+            <div class="image-details">
+                <h3>Malai Kulfi</h3>
+                <p>Rich and creamy Indian ice cream made from milk and flavored with cardamom.</p>
+                <p><strong>Ingredients:</strong> Milk, Sugar, Cardamom</p>
+                <p><strong>Preparation Time:</strong> 4 hours (freezing time)</p>
+               <!---- <p><strong>Preparation:</strong> Cook milk, flavor with cardamom, freeze in molds.</p>--->
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <a href="matka_malai_kulfi.html">
+        <img src="images/Matka Malai Kulfi.webp" alt="Matka Malai Kulfi">
+       
+        </a>
+        <div class="image-details">
+            <h3>Matka Malai Kulfi</h3>
+            <p>A traditional kulfi served in a small earthen pot, rich and creamy with a unique flavor.</p>
+            <p><strong>Ingredients:</strong> Milk, Cream, Nuts, Cardamom</p>
+            <p><strong>Preparation Time:</strong> 4 hours (freezing time)</p>
+            <!--<p><strong>Preparation:</strong> Cook milk and cream, add nuts, freeze in earthen pots.</p>--->
+        </div>
+    </div>
+
+
+    <script>
+        function function_dessert(){
+
+            var input=document.getElementById("search-input").value.toLowerCase();
+            var recipe={
+                "gulab jamun": "gulab_jamun.html",
+                    "rasmalai": "rasamalai.html",
+                    "kheer": "kheer.html",
+                    "chamcham": "chamcham.html",
+                    "rasugulla": "rasagulla.html",
+                    "barfi": "barfi.html",
+                    "ghevar": "ghevar.html",
+                    "halwa": "halwa.html",
+                    "laddu": "laddu.html",
+                };
+                if (recipe[input]){
+                    window.location.href=recipe[input];
+                }
+                else{
+                    alert("dessert not found");
+                }
+            }
+    </script>
+    
+</body>
+</html>

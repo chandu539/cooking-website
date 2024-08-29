@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani Types</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .search-box input[type="submit"] {
+            background-color: #ffffff;
+            color: #ff6347;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .search-box input[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+        .title-section {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin: 20px 0;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .title-section h1 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        .title-section p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        img {
+            height: 200px;
+            width: 250px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;
+        }
+        .caption {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .image-info {
+            margin-top: 10px;
+            font-size: 16px;
+            text-align: center;
+            max-width: 250px;
+            line-height: 1.5;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+   <div class="search-box">
+    <input type="text" id="search-input" placeholder="Search Biryani...">
+    <input type="button" id="search-button" value="Search">
+</div>
+
+
+</header>
+
+<div class="title-section">
+    <h1>Biryani Extravaganza</h1>
+    <p>Discover a variety of biryanis, each uniquely spiced and deliciously prepared. Dive into our collection of aromatic biryanis!</p>
+</div>
+
+<div class="image-row">
+    <div class="image-container">
+        <a href="chicken_dum_biryani.html">
+            <img src="images/chicken_dhum_biryani.jpeg" alt="Chicken Dum Biryani">
+            <div class="caption">Chicken Dum Biryani</div>
+        </a>
+        <div class="image-info">A flavorful biryani cooked with marinated chicken and aromatic spices.</div>
+    </div>
+    <div class="image-container">
+        <a href="chicken_fry_piece_biryani.html">
+            <img src="images/chicken-fry-piece-biryani.webp" alt="Chicken Fry Piece Biryani">
+            <div class="caption">Chicken Fry Piece Biryani</div>
+        </a>
+        <div class="image-info">A biryani dish topped with crispy fried chicken pieces.</div>
+    </div>
+    <div class="image-container">
+        <a href="egg_biryani.html">
+            <img src="images/egg_biryani.jpg" alt="Egg Biryani">
+            <div class="caption">Egg Biryani</div>
+        </a>
+        <div class="image-info">A delicious biryani made with boiled eggs and fragrant basmati rice.</div>
+    </div>
+</div>
+
+<div class="image-row">
+    <div class="image-container">
+        <a href="fish_biryani.html">
+            <img src="images/fish_biryani.jpeg" alt="Fish Biryani">
+            <div class="caption">Fish Biryani</div>
+        </a>
+        <div class="image-info">A seafood lover's delight, made with tender fish and spices.</div>
+    </div>
+    <div class="image-container">
+        <a href="kolkata_biryani.html">
+            <img src="images/kolkata_biryani.jpeg" alt="Kolkata Biryani">
+            <div class="caption">Kolkata Biryani</div>
+        </a>
+        <div class="image-info">A light and fragrant biryani, famous in the streets of Kolkata.</div>
+    </div>
+    <div class="image-container">
+        <a href="mutton_biryani.html">
+            <img src="images/mutton_biryani.jpg" alt="Mutton Biryani">
+            <div class="caption">Mutton Biryani</div>
+        </a>
+        <div class="image-info">Rich and spicy, this mutton biryani is a classic favorite.</div>
+    </div>
+</div>
+
+<div class="image-row">
+    <div class="image-container">
+        <a href="paneer_biryani.html">
+            <img src="images/paneer_biryani.jpeg" alt="Paneer Biryani">
+            <div class="caption">Paneer Biryani</div>
+        </a>
+        <div class="image-info">A vegetarian delight, made with soft paneer cubes and spices.</div>
+    </div>
+    <div class="image-container">
+        <a href="prawn_biryani.html">
+            <img src="images/prawn_biryani.jpg" alt="Prawn Biryani">
+            <div class="caption">Prawn Biryani</div>
+        </a>
+        <div class="image-info">A coastal delicacy, made with fresh prawns and flavorful rice.</div>
+    </div>
+    <div class="image-container">
+        <a href="sindhi_biryani.html">
+            <img src="images/sindhi_biryani.jpeg" alt="Sindhi Biryani">
+            <div class="caption">Sindhi Biryani</div>
+        </a>
+        <div class="image-info">A spicy and tangy biryani, popular in Sindh region.</div>
+    </div>
+</div>
+
+<div class="image-container">
+    <a href="veg_biryani.html">
+        <img src="images/veg_biryani.jpeg" alt="Veg Biryani">
+        <div class="caption">Veg Biryani</div>
+    </a>
+    <div class="image-info">A flavorful biryani packed with fresh vegetables and spices.</div>
+</div> 
+
+
+<script>
+    document.getElementById('search-button').addEventListener('click', function() {
+        // Get the search input value
+        var searchQuery = document.getElementById('search-input').value.toLowerCase().trim();
+        
+        // Define the keyword to URL mapping
+        var pages = {
+            'chicken dum biryani': 'chicken_dum_biryani.html',
+            'chicken fry piece biryani': 'chicken_fry_piece_biryani.html',
+            'egg biryani': 'egg_biryani.html',
+            'fish biryani': 'fish_biryani.html',
+            'kolkata biryani': 'kolkata_biryani.html',
+            'mutton biryani': 'mutton_biryani.html',
+            'paneer biryani': 'paneer_biryani.html',
+            'prawn biryani': 'prawn_biryani.html',
+            'sindhi biryani': 'sindhi_biryani.html',
+            'veg biryani': 'veg_biryani.html'
+        };
+        
+        // Check if the search query matches any key in the pages object
+        if (pages[searchQuery]) {
+            window.location.href = pages[searchQuery];
+        } else {
+            alert('Sorry, we could not find the biryani you are looking for.');
+        }
+    });
+</script>
+
+</body>
+</html>

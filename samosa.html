@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samosa Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff3e0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header nav {
+            margin-top: 5px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #ffebee;
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h2 {
+            color: #ff6f61;
+            border-bottom: 2px solid #ff6f61;
+            display: inline-block;
+            margin: 40px 0 20px 0;
+            font-size: 28px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .ingredients, .steps {
+            margin-bottom: 30px;
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 20px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .back-links {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .back-links a {
+            text-decoration: none;
+            color: #ff6f61;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .back-links a:hover {
+            color: #e64a19;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+            header nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .description, .ingredients li, .steps li {
+                font-size: 16px;
+            }
+            .image-container img {
+                width: 100%;
+                max-width: 250px;
+            }
+            .back-links a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Samosa Recipe</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="side_dishes.html">Back to Snacks</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="image-container">
+        <img src="images/samosa_sd.jpeg" alt="Samosa">
+    </div>
+
+    <div class="description">
+        Samosa is a popular Indian snack that features a crispy pastry filled with a spicy mixture of potatoes, peas, and spices. It's a favorite at parties and special occasions.
+    </div>
+
+    <h2>Ingredients</h2>
+    <div class="ingredients">
+        <ul>
+            <li>2 cups All-Purpose Flour</li>
+            <li>1/2 cup Ghee or Oil</li>
+            <li>2 large Potatoes, boiled and mashed</li>
+            <li>1/2 cup Green Peas</li>
+            <li>1 tsp Cumin Seeds</li>
+            <li>1 tsp Coriander Powder</li>
+            <li>1/2 tsp Turmeric Powder</li>
+            <li>1/2 tsp Red Chili Powder</li>
+            <li>1/2 tsp Garam Masala</li>
+            <li>1 tbsp Lemon Juice</li>
+            <li>Salt to taste</li>
+            <li>Oil for frying</li>
+        </ul>
+    </div>
+
+    <h2>Step-by-Step Instructions</h2>
+    <div class="steps">
+        <ol>
+            <li>Mix flour with ghee or oil to make a dough. Cover and set aside.</li>
+            <li>Heat oil in a pan and add cumin seeds. Once they splutter, add peas and spices. Cook for a few minutes.</li>
+            <li>Add mashed potatoes and mix well. Adjust seasoning and set the filling aside to cool.</li>
+            <li>Divide the dough into small balls and roll out into thin circles.</li>
+            <li>Cut each circle into half and form a cone. Fill with the potato mixture and seal the edges.</li>
+            <li>Heat oil in a pan and fry the samosas until golden brown. Drain on paper towels and serve hot.</li>
+        </ol>
+    </div>
+
+    <div class="back-links">
+        <a href="index.html">Back to Home</a>
+        <a href="side_dishes.html">Back to Snacks</a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halwa Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff9800;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header nav {
+            margin-top: 5px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #fff3e0;
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h2 {
+            color: #ff9800;
+            border-bottom: 2px solid #ff9800;
+            display: inline-block;
+            margin: 40px 0 20px 0;
+            font-size: 28px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .ingredients, .steps {
+            margin-bottom: 30px;
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 20px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .back-links {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .back-links a {
+            text-decoration: none;
+            color: #ff9800;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .back-links a:hover {
+            color: #e68900;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+            header nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .description, .ingredients li, .steps li {
+                font-size: 16px;
+            }
+            .image-container img {
+                width: 100%;
+                max-width: 250px;
+            }
+            .back-links a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Halwa Recipe</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="desserts.html">Back to Desserts</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="image-container">
+        <img src="images/halwa.jpeg" alt="Halwa">
+    </div>
+
+    <div class="description">
+        Halwa is a rich and flavorful Indian dessert made from various ingredients like semolina, lentils, or carrots. It's cooked with ghee, sugar, and aromatic spices, making it a perfect treat for celebrations and special occasions.
+    </div>
+
+    <h2>Ingredients</h2>
+    <div class="ingredients">
+        <ul>
+            <li>1 cup Semolina (Rava)</li>
+            <li>1/2 cup Ghee (Clarified Butter)</li>
+            <li>1/2 cup Sugar</li>
+            <li>2 cups Water or Milk</li>
+            <li>1/4 cup Chopped Nuts (cashews, almonds)</li>
+            <li>1/4 cup Raisins</li>
+            <li>1/2 tsp Cardamom Powder</li>
+            <li>1 tbsp Raisins (for garnish)</li>
+        </ul>
+    </div>
+
+    <h2>Step-by-Step Instructions</h2>
+    <div class="steps">
+        <ol>
+            <li>Heat ghee in a pan over medium heat. Add semolina and roast until it turns golden brown and aromatic.</li>
+            <li>Add water or milk gradually, stirring continuously to avoid lumps. Cook until the mixture thickens and the semolina absorbs the liquid.</li>
+            <li>Add sugar, cardamom powder, and mix well. Cook for a few more minutes until the sugar dissolves and the mixture attains a pudding-like consistency.</li>
+            <li>In a separate pan, lightly toast the nuts and raisins in ghee, then add them to the halwa.</li>
+            <li>Remove from heat and let it cool slightly before serving. Garnish with additional nuts and raisins if desired.</li>
+        </ol>
+    </div>
+
+    <div class="back-links">
+        <a href="index.html">Back to Home</a>
+        <a href="desserts.html">Back to Desserts</a>
+    </div>
+</div>
+
+</body>
+</html>

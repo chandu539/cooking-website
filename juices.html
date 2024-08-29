@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refreshing Juices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .search-box input[type="submit"] {
+            background-color: #ffffff;
+            color: #ff6347;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .search-box input[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+        .title-section {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin: 20px 0;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .title-section h1 {
+            font-size: 40px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        .title-section p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        img {
+            height: 240px;
+            width: 300px;
+            margin: 20px 0;
+            box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;
+        }
+        .caption {
+            font-size: 20px;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        .image-details {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 10px;
+            width: 300px;
+        }
+        .image-details h3 {
+            font-size: 22px;
+            margin: 0;
+            color: #ff6347;
+        }
+        .image-details p {
+            font-size: 14px;
+            color: #666;
+        }
+        .image-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="Search Juices..." id="search-input">
+            <input type="submit" value="Search" onclick="function_juice()">
+        </div>
+
+
+    </header>
+
+    <div class="title-section">
+        <h1>Refreshing Juices</h1>
+        <p>Explore our collection of delightful juices made from fresh fruits. Perfect for a healthy and delicious treat!</p>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            
+                <img src="images/banana_juice.jpeg" alt="Banana Juice">
+            
+            <div class="caption">Banana Juice</div>
+            <div class="image-details">
+                <h3>Banana Juice</h3>
+                <p>A creamy, sweet juice made from ripe bananas. Perfect for a quick and nutritious snack.</p>
+                <p><strong>Ingredients:</strong> Bananas, Milk, Honey</p>
+                <p><strong>Preparation Time:</strong> 10 minutes</p>
+                <p><strong>Preparation:</strong> Blend all ingredients until smooth. Serve chilled.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            
+                <img src="images/carrot_juice.jpeg" alt="Carrot Juice">
+            
+            <div class="caption">Carrot Juice</div>
+            <div class="image-details">
+                <h3>Carrot Juice</h3>
+                <p>Freshly squeezed carrot juice that is both sweet and nutritious. Great for your vision and immune system.</p>
+                <p><strong>Ingredients:</strong> Carrots, Lemon, Ginger</p>
+                <p><strong>Preparation Time:</strong> 15 minutes</p>
+                <p><strong>Preparation:</strong> Juice the carrots, lemon, and ginger together. Stir and serve chilled.</p>
+            </div>
+        </div>
+        <div class="image-container">
+           
+                <img src="images/coconut_juice.jpeg" alt="Coconut Juice">
+            
+            <div class="caption">Coconut Juice</div>
+            <div class="image-details">
+                <h3>Coconut Juice</h3>
+                <p>Refreshing coconut juice straight from the coconut. Hydrating and packed with electrolytes.</p>
+                <p><strong>Ingredients:</strong> Coconut Water</p>
+                <p><strong>Preparation Time:</strong> 5 minutes</p>
+                <p><strong>Preparation:</strong> Open the coconut and pour the water into a glass. Serve chilled.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            
+                <img src="images/grape_juice.jpeg" alt="Grape Juice">
+            
+            <div class="caption">Grape Juice</div>
+            <div class="image-details">
+                <h3>Grape Juice</h3>
+                <p>Sweet and tangy grape juice made from fresh grapes. Ideal for a refreshing beverage.</p>
+                <p><strong>Ingredients:</strong> Grapes, Sugar</p>
+                <p><strong>Preparation Time:</strong> 10 minutes</p>
+                <p><strong>Preparation:</strong> Juice the grapes and mix in sugar. Stir well and serve chilled.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            
+                <img src="images/mango_juice.jpeg" alt="Mango Juice">
+            
+            <div class="caption">Mango Juice</div>
+            <div class="image-details">
+                <h3>Mango Juice</h3>
+                <p>Rich and flavorful mango juice, perfect for a tropical escape in a glass.</p>
+                <p><strong>Ingredients:</strong> Mangoes, Sugar, Water</p>
+                <p><strong>Preparation Time:</strong> 10 minutes</p>
+                <p><strong>Preparation:</strong> Blend mangoes with sugar and water until smooth. Serve chilled.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            
+                <img src="images/orange_juice.jpeg" alt="Orange Juice">
+           
+            <div class="caption">Orange Juice</div>
+            <div class="image-details">
+                <h3>Orange Juice</h3>
+                <p>Classic orange juice, freshly squeezed for a zesty and vitamin-rich drink.</p>
+                <p><strong>Ingredients:</strong> Oranges</p>
+                <p><strong>Preparation Time:</strong> 10 minutes</p>
+                <p><strong>Preparation:</strong> Squeeze the oranges and pour the juice into a glass. Serve chilled.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            
+                <img src="images/pineapple_juice.jpeg" alt="Pineapple Juice">
+            
+            <div class="caption">Pineapple Juice</div>
+            <div class="image-details">
+                <h3>Pineapple Juice</h3>
+                <p>Tropical pineapple juice that's sweet and tangy, ideal for a refreshing drink.</p>
+                <p><strong>Ingredients:</strong> Pineapple, Sugar</p>
+                <p><strong>Preparation Time:</strong> 15 minutes</p>
+                <p><strong>Preparation:</strong> Blend pineapple with sugar until smooth. Serve chilled.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            
+                <img src="images/sapota_juice.jpeg" alt="Sapota Juice">
+           
+            <div class="caption">Sapota Juice</div>
+            <div class="image-details">
+                <h3>Sapota Juice</h3>
+                <p>A sweet and creamy juice made from ripe sapota, also known as chiku.</p>
+                <p><strong>Ingredients:</strong> Sapota, Milk, Sugar</p>
+                <p><strong>Preparation Time:</strong> 15 minutes</p>
+                <p><strong>Preparation:</strong> Blend sapota with milk and sugar until smooth. Serve chilled.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            
+                <img src="images/sugarcane_juice.jpeg" alt="Sugarcane Juice">
+            
+            <div class="caption">Sugarcane Juice</div>
+            <div class="image-details">
+                <h3>Sugarcane Juice</h3>
+                <p>Fresh and naturally sweet sugarcane juice, a traditional favorite.</p>
+                <p><strong>Ingredients:</strong> Sugarcane</p>
+                <p><strong>Preparation Time:</strong> 10 minutes</p>
+                <p><strong>Preparation:</strong> Juice the sugarcane and serve chilled.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        
+            <img src="images/watermelon_juice.jpeg" alt="Watermelon Juice">
+       
+        <div class="caption">Watermelon Juice</div>
+        <div class="image-details">
+            <h3>Watermelon Juice</h3>
+            <p>Cool and refreshing watermelon juice, ideal for hydration on a hot day.</p>
+            <p><strong>Ingredients:</strong> Watermelon, Lime</p>
+            <p><strong>Preparation Time:</strong> 10 minutes</p>
+            <p><strong>Preparation:</strong> Blend watermelon with lime juice. Serve chilled.</p>
+        </div>
+    </div>
+<script>
+    function function_juice(){
+        alert("check the page for juice...");
+    }
+</script>
+</body>
+</html>

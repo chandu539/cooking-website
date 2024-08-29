@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Foodie's Paradise: Recipes with Visual Flair</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        header {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: black;
+            background-color: white;
+            border-radius: 3px;
+        }
+        
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .intro {
+            margin-bottom: 40px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .featured-recipes, .video-of-the-week, .call-to-action {
+            margin-bottom: 40px;
+        }
+        
+        .recipe-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .recipe-gallery a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .recipe-gallery img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .video-container {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 8px;
+        }
+        
+        footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-links ul,
+.footer-socials ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-socials ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a,
+.footer-socials ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover,
+.footer-socials ul li a:hover {
+    color: #FFD700;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-newsletter button {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Foodie's Recipes</h1>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="starters.html" target="_self">Starters</a></li>
+                    <li><a href="biryani.html" target="_parent">Main Dishes</a></li>
+                    <li><a href="side_dishes.html" target="_parent">Side Dishes</a></li>
+                    <li><a href="breakfast.html" target="_parent">Break Fast</a></li>
+                    <li><a href="juices.html" target="_parent">Juices</a></li>
+                    <li><a href="Desserts.html" target="_parent">Desserts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
+    <div class="content">
+        <!-- Introduction -->
+        <section class="intro">
+            <!--<h2>Welcome to Foodie's Paradise</h2>-->
+            <p>Welcome to Foodie's Paradise, where culinary dreams come to life! Explore our collection of delicious recipes, cooking tips, and mouthwatering videos. Whether you're a seasoned chef or just starting out, we have something for everyone. Join our community and elevate your cooking skills with our easy-to-follow recipes and expert advice.</p>
+        </section>
+        
+        <!-- Featured Recipes -->
+        <section class="featured-recipes">
+            <h2>Featured Recipes</h2>
+            <div class="recipe-gallery">
+                <a href="manchurian.html">
+                    <img src="lauki_manchurian.jpeg" alt="Delicious Manchurian">
+                    <p>Delicious Manchurian</p>
+                </a>
+                <a href="biryani.html">
+                    <img src="chicken-fry-piece-biryani.webp" alt="Mouthwatering Biryani">
+                    <p>Mouthwatering Biryani</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Video of the Week -->
+        <section class="video-of-the-week">
+            <h2>Video of the Week</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="call-to-action">
+            <h2>Join Our Community</h2>
+            <p>Sign up for our newsletter to get the latest recipes and cooking tips delivered to your inbox!</p>
+            <a href="signup.html">Sign Up</a>
+        </section>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Foodie's Paradise</h3>
+            <p>Discover the best recipes for starters, main dishes, side dishes, breakfast, juices, and desserts. Your go-to guide for culinary inspiration!</p>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-socials">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4>Subscribe to our Newsletter</h4>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 Foodie's Recipes. All Rights Reserved.</p>
+            <p>Designed by Chandu Innovations</p>
+            <a href="#">Back to Top</a>
+        </div>
+       <!-----<p>&copy; 2024 Foodie's Paradise. All rights reserved.</p>-->
+    </footer>
+    
+</body>
+</html>

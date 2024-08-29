@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Recipes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .search-box input[type="submit"] {
+            background-color: #ffffff;
+            color: #ff6347;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .search-box input[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+        .title-section {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin: 20px 0;
+        }
+        .title-section h1 {
+            font-size: 36px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .title-section p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .image-container {
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .image-container img {
+            height: 240px;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .caption {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #ff6347;
+        }
+        .description {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+        .details {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+        .details .title {
+            font-weight: bold;
+            color: #ff6347;
+        }
+        .details ul {
+            list-style: none;
+            padding: 0;
+        }
+        .details ul li {
+            margin-bottom: 5px;
+        }
+        @media (max-width: 600px) {
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Recipes...">
+            <input type="submit" value="Search" onclick="function_recipe()">
+        </div>
+    </header>
+
+    <div class="title-section">
+        <h1>Delicious Side Dishes</h1>
+        <p>Explore our collection of mouthwatering side dishes to complement your main courses!</p>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="butter_naan.html">
+            <img src="images/butternaan_sd.jpg" alt="Butter Naan">
+            </a>
+            <div class="caption">Butter Naan</div>
+            <div class="description">
+                Soft and fluffy Indian flatbread brushed with butter, perfect for soaking up rich curries and gravies.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Flour</li>
+                    <li>Butter</li>
+                    <li>Yogurt</li>
+                    <li>Yeast</li>
+                    <li>Water</li>
+                    <li>Salt</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>2 hours (includes dough rising time)</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Best served with butter chicken or paneer tikka masala.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="curd_rice.html">
+            <img src="images/curd_rice_sd.webp" alt="Curd Rice">
+            </a>
+            <div class="caption">Curd Rice</div>
+            <div class="description">
+                A comforting South Indian dish made with rice and yogurt, often tempered with spices and garnished with coriander.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Rice</li>
+                    <li>Yogurt</li>
+                    <li>Mustard Seeds</li>
+                    <li>Curry Leaves</li>
+                    <li>Green Chilies</li>
+                    <li>Salt</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>30 minutes</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Enjoy with pickle and papadam.</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <a href="jeera_rice.html">
+            <img src="images/jeera_rice_sd.jpeg" alt="Jeera Rice">
+            </a>
+            <div class="caption">Jeera Rice</div>
+            <div class="description">
+                Aromatic basmati rice cooked with cumin seeds and ghee, a simple yet flavorful side dish.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Basmati Rice</li>
+                    <li>Cumin Seeds</li>
+                    <li>Ghee</li>
+                    <li>Onion</li>
+                    <li>Salt</li>
+                    <li>Water</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>25 minutes</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Perfect with dal makhani or any curry.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="mirchi_bajji.html">
+            <img src="images/mirchi_bajji.jpg" alt="Mirchi Bajji">
+            </a>
+            <div class="caption">Mirchi Bajji</div>
+            <div class="description">
+                Spicy green chilies stuffed with tangy masala and deep-fried in a chickpea flour batter. A popular Indian snack.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Green Chilies</li>
+                    <li>Chickpea Flour</li>
+                    <li>Onion</li>
+                    <li>Ginger</li>
+                    <li>Garlic</li>
+                    <li>Spices</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>40 minutes</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Serve with tamarind chutney or yogurt.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="papad.html">
+            <img src="images/papad_sd.jpg" alt="Papad">
+            </a>
+            <div class="caption">Papad</div>
+            <div class="description">
+                Crispy, thin crackers made from lentil flour, often enjoyed as an accompaniment to meals.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Lentil Flour</li>
+                    <li>Spices</li>
+                    <li>Oil</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>10 minutes</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Enjoy as a crunchy side with any Indian meal.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="veg_salad.html">
+            <img src="images/salad_sd.webp" alt="Salad">
+            </a>
+            <div class="caption">Salad</div>
+            <div class="description">
+                A fresh mix of vegetables, dressed with a tangy vinaigrette, perfect for a light and healthy addition to any meal.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Mixed Greens</li>
+                    <li>Cucumber</li>
+                    <li>Tomato</li>
+                    <li>Carrot</li>
+                    <li>Vinaigrette</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>15 minutes</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Pair with grilled meats or as a refreshing side dish.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-row">
+        <div class="image-container">
+            <a href="samosa.html">
+            <img src="images/samosa_sd.jpeg" alt="Samosa">
+            </a>
+            <div class="caption">Samosa</div>
+            <div class="description">
+                Crispy pastry filled with spiced potatoes and peas, a favorite Indian street food and appetizer.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Potatoes</li>
+                    <li>Peas</li>
+                    <li>Spices</li>
+                    <li>Pastry Dough</li>
+                    <li>Oil</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>1 hour</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Serve with mint chutney or tamarind chutney.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="tamarind_rice.html">
+            <img src="images/tamarind_rice_sd.jpeg" alt="Tamarind Rice">
+            </a>
+            <div class="caption">Tamarind Rice</div>
+            <div class="description">
+                Tangy rice dish flavored with tamarind, peanuts, and spices. A flavorful and zesty South Indian classic.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Rice</li>
+                    <li>Tamarind</li>
+                    <li>Peanuts</li>
+                    <li>Spices</li>
+                    <li>Mustard Seeds</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>45 minutes</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Enjoy with yogurt or raita.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <a href="tomato_rice.html">
+            <img src="images/tomato_rice_sd.webp" alt="Tomato Rice">
+            </a>
+            <div class="caption">Tomato Rice</div>
+            <div class="description">
+                Spicy and tangy rice dish cooked with tomatoes, onions, and spices, often enjoyed with a side of raita.
+            </div>
+            <div class="details">
+                <div class="title">Ingredients:</div>
+                <ul>
+                    <li>Rice</li>
+                    <li>Tomatoes</li>
+                    <li>Onions</li>
+                    <li>Spices</li>
+                    <li>Coriander</li>
+                </ul>
+                <div class="title">Preparation Time:</div>
+                <p>30 minutes</p>
+                <div class="title">Serving Suggestions:</div>
+                <p>Pair with a simple cucumber raita or salad.</p>
+            </div>
+        </div>
+    </div> 
+
+
+    <script>
+        function function_recipe(){
+            var x = document.getElementById("search-input").value.toLowerCase();
+    
+            // Mapping of keywords to URLs
+            var recipes = {
+                "butter naan": "butter_naan.html",
+                "curd rice": "curd_rice.html",
+                "jeera rice": "jeera_rice.html",
+                "mirchi bajji": "mirchi_bajji.html",
+                "papad": "papad.html",
+                "salad": "veg_salad.html",
+                "samosa": "samosa.html",
+                "tamarind rice": "tamarind_rice.html",
+                "tomato rice": "tomato_rice.html"
+            };
+    
+            // Navigate to the corresponding page if the keyword exists
+            if (recipes[x]) {
+                window.location.href = recipes[x];
+            } else {
+                alert("Recipe not found! Please try a different search term.");
+            }
+        }
+    </script>
+    
+</body>
+</html>

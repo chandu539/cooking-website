@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious South Indian Recipes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            width: 250px;
+            margin-right: 10px;
+        }
+        .search-box input[type="submit"] {
+            background-color: #ffffff;
+            color: #ff6347;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .search-box input[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+        .title-section {
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+        }
+        .title-section h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .title-section p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .recipe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .recipe {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .recipe:hover {
+            transform: scale(1.05);
+        }
+        .recipe img {
+            height: 180px;
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .recipe .caption {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ff6347;
+            margin-top: 10px;
+        }
+        .recipe .description {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .recipe .special {
+            font-size: 14px;
+            color: #777;
+            background-color: #f9f9f9;
+            border-left: 4px solid #ff6347;
+            padding: 5px;
+            margin-top: 10px;
+            text-align: left;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+        
+        <div class="search-box">
+            <input type="text" placeholder="Search Recipes..." id="search-input">
+            <input type="submit" value="Search" onclick="function_bf()">
+        </div>
+    </header>
+
+    <div class="title-section">
+        <h1>Delicious Breakfast Recipes</h1>
+        <p>Explore our collection of mouthwatering South Indian breakfast dishes!</p>
+    </div>
+
+    <div class="recipe-container">
+        <div class="recipe">
+            <a href="dosa.html">
+            <img src="images/dosa.jpeg" alt="Dosa">
+            <div class="caption">Dosa</div>
+                </a>
+            <div class="description">
+                A crispy, thin pancake made from fermented rice and lentil batter. Perfect with chutneys and sambar.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Dosa is a staple South Indian breakfast item known for its crunchy texture and versatile fillings.
+            </div>
+        </div>
+
+        <div class="recipe">
+            <a href="idly.html">
+            <img src="images/idly_bf.jpeg" alt="Idly">
+            <div class="caption">Idly</div>
+            </a>
+            <div class="description">
+                Soft, fluffy steamed rice cakes made from a fermented batter of rice and lentils. Ideal for breakfast or dinner.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Idly is renowned for its lightness and is often paired with sambar and coconut chutney.
+            </div>
+        </div>
+
+        <div class="recipe">
+            <a href="pongal.html">
+            <img src="images/pongal.jpg" alt="Pongal">
+            <div class="caption">Pongal</div>
+            </a>
+            <div class="description">
+                A savory rice and lentil porridge, cooked with spices and garnished with cashews and black pepper.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Pongal is a comforting dish often enjoyed during festivals and special occasions.
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <div class="recipe">
+            <a href="punugulu.html">
+            <img src="images/punugulu.webp" alt="Punugulu">
+            <div class="caption">Punugulu</div>
+            </a>
+            <div class="description">
+                Deep-fried lentil fritters that are crispy on the outside and soft on the inside. Great as a snack or appetizer.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Punugulu are popular for their delightful crunch and are often enjoyed with chutney or sambar.
+            </div>
+        </div>
+
+        <div class="recipe">
+            <a href="puri.html">
+            <img src="images/puri.jpeg" alt="Puri">
+            <div class="caption">Puri</div>
+            </a>
+            <div class="description">
+                Puffy, deep-fried bread made from unleavened wheat flour dough. It pairs well with potato curry or chole.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Puri is loved for its airy texture and is a festive favorite often served with various curries.
+            </div>
+        </div>
+
+        <div class="recipe">
+            <a href="raagi_dosa.html">
+            <img src="images/raagi_dosa.jpeg" alt="Raagi Dosa">
+            <div class="caption">Raagi Dosa</div>
+            </a>
+            <div class="description">
+                A healthier version of dosa made with ragi (finger millet) flour, offering a rich, nutty flavor.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Raagi dosa is nutritious and provides a good alternative for those seeking a high-fiber diet.
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <div class="recipe">
+            <a href="raagi_mudde.html">
+            <img src="images/raagi_mudde_bf.jpeg" alt="Raagi Mudde">
+            <div class="caption">Raagi Mudde</div>
+            </a>
+            <div class="description">
+                Soft, steamed balls made from ragi flour, typically served with spicy curries or sambar.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Raagi Mudde is a traditional South Indian dish that is both filling and nutritious.
+            </div>
+        </div>
+
+        <div class="recipe">
+            <a href="semiya_upma.html">
+            <img src="images/semiya upma.jpeg" alt="Semmiya Upma">
+            <div class="caption">Semmiya Upma</div>
+            </a>
+            <div class="description">
+                A savory dish made from semiya (vermicelli), cooked with vegetables and spices. Ideal for breakfast or light meals.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Semiya Upma is a quick and easy dish that is both satisfying and versatile.
+            </div>
+        </div>
+
+        <div class="recipe">
+            <a href="upma.html">
+            <img src="images/upma_bf.jpeg" alt="Upma">
+            <div class="caption">Upma</div>
+            </a>
+            <div class="description">
+                A traditional South Indian breakfast dish made from coarse semolina, mixed with spices, and garnished with fresh herbs.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Upma is often enjoyed with a side of coconut chutney and is a wholesome start to the day.
+            </div>
+        </div>
+    </div>
+
+    <div class="recipe-container">
+        <div class="recipe">
+            <a href="vada.html">
+            <img src="images/vada.webp" alt="Vada">
+            <div class="caption">Vada</div>
+            </a>
+            <div class="description">
+                Deep-fried lentil donuts that are crispy on the outside and soft on the inside. Perfect as a snack or appetizer.
+            </div>
+            <div class="special">
+                <strong>Special Note:</strong> Vada is a popular choice during festivals and is often served with sambar and chutney.
+            </div>
+        </div>
+    </div>
+<script>
+    function function_bf() {
+        var input = document.getElementById('search-input').value.toLowerCase();
+        var recipes = [
+            { name: 'dosa', url: 'dosa.html' },
+            { name: 'idly', url: 'idly.html' },
+            { name: 'pongal', url: 'pongal.html' },
+            { name: 'punugulu', url: 'punugulu.html' },
+            { name: 'puri', url: 'puri.html' },
+            { name: 'raagi dosa', url: 'raagi_dosa.html' },
+            { name: 'raagi mudde', url: 'raagi_mudde.html' },
+            { name: 'semiya upma', url: 'semiya_upma.html' },
+            { name: 'upma', url: 'upma.html' },
+            { name: 'vada', url: 'vada.html' }
+        ];
+    
+        for (var i = 0; i < recipes.length; i++) {
+            if (recipes[i].name.includes(input)) {
+                window.location.href = recipes[i].url;
+                return;
+            }
+        }
+    
+        alert('Recipe not found. Please try another keyword.');
+    }
+    </script>
+</body>
+</html>

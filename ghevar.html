@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghevar Recipe</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f2;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #8e24aa;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        header nav {
+            margin-top: 5px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #f1e3f3;
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content h2 {
+            color: #8e24aa;
+            border-bottom: 2px solid #8e24aa;
+            display: inline-block;
+            margin: 40px 0 20px 0;
+            font-size: 28px;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #666;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .ingredients, .steps {
+            margin-bottom: 30px;
+        }
+        .ingredients ul, .steps ol {
+            padding-left: 20px;
+        }
+        .ingredients li, .steps li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .back-links {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .back-links a {
+            text-decoration: none;
+            color: #8e24aa;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        .back-links a:hover {
+            color: #6a1b9a;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 20px;
+            }
+            header nav a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+            .content {
+                padding: 15px;
+            }
+            .content h2 {
+                font-size: 24px;
+            }
+            .description, .ingredients li, .steps li {
+                font-size: 16px;
+            }
+            .image-container img {
+                width: 100%;
+                max-width: 250px;
+            }
+            .back-links a {
+                font-size: 14px;
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ghevar Recipe</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="desserts.html">Back to Desserts</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="image-container">
+        <img src="images/Ghevar.jpeg" alt="Ghevar">
+    </div>
+
+    <div class="description">
+        Ghevar is a traditional Rajasthani sweet, particularly popular during festivals. This round, honeycomb-like dessert is made from a batter of flour, milk, and ghee, fried until crispy, and then soaked in sugar syrup for a delectable treat.
+    </div>
+
+    <h2>Ingredients</h2>
+    <div class="ingredients">
+        <ul>
+            <li>1 cup All-Purpose Flour</li>
+            <li>1/2 cup Cornflour</li>
+            <li>1/2 cup Milk</li>
+            <li>1/2 cup Ghee (clarified butter)</li>
+            <li>1/2 tsp Baking Powder</li>
+            <li>1 cup Sugar</li>
+            <li>1 cup Water</li>
+            <li>1/4 tsp Cardamom Powder</li>
+            <li>Chopped Nuts for garnish (optional)</li>
+        </ul>
+    </div>
+
+    <h2>Step-by-Step Instructions</h2>
+    <div class="steps">
+        <ol>
+            <li>In a mixing bowl, combine all-purpose flour, cornflour, and baking powder. Gradually add milk and whisk to make a smooth batter.</li>
+            <li>Heat ghee in a deep frying pan. To test if the ghee is hot enough, drop a small amount of batter into the ghee; it should float and sizzle.</li>
+            <li>Pour a small amount of batter into the hot ghee. The batter should spread out and form a honeycomb-like structure. Fry until golden brown, then remove and drain on paper towels.</li>
+            <li>Prepare the sugar syrup by boiling sugar and water together until slightly thickened. Add cardamom powder and mix well.</li>
+            <li>Soak the fried ghevars in the warm sugar syrup for a few minutes, then remove and let them cool. Garnish with chopped nuts if desired.</li>
+        </ol>
+    </div>
+
+    <div class="back-links">
+        <a href="index.html">Back to Home</a>
+        <a href="desserts.html">Back to Desserts</a>
+    </div>
+</div>
+
+</body>
+</html>
